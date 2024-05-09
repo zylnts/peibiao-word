@@ -1,3 +1,4 @@
+#需要安装python-docx库
 from docx import Document
 from difflib import SequenceMatcher
 
@@ -21,8 +22,8 @@ def find_duplicates(text1, text2, threshold=0.8, min_length=20):
 
 def main():
     """主函数"""
-    file1_path = r"document1.docx"  # 第一个 Word 文档路径
-    file2_path = r"document2.docx"  # 第二个 Word 文档路径
+    file1_path = r"C:\Users\ZhuL\Desktop\1.docx"  # 第一个 Word 文档路径
+    file2_path = r"C:\Users\ZhuL\Desktop\2.docx"  # 第二个 Word 文档路径
 
     text1 = get_text_from_docx(file1_path)
     text2 = get_text_from_docx(file2_path)
